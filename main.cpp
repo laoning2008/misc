@@ -1,5 +1,11 @@
 #include <iostream>
 
+
+//https://www.cnblogs.com/wangpei0522/p/4472548.html
+//https://blog.csdn.net/m0_37599645/article/details/112860603
+//https://blog.csdn.net/Tanswer_/article/details/77005674
+
+
 class Persion {
 public:
     Persion(int age) {
@@ -62,7 +68,9 @@ int main(int argc, const char * argv[]) {
     
     
 //    Persion p = get();
-    Persion p = get2();
+    
+    Persion&& p = get2();
+//    Persion p = get2();
     consume_persion(p);
     
     return 0;
